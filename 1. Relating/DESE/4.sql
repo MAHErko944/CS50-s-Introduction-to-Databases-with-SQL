@@ -1,0 +1,8 @@
+SELECT "CITY" , COUNT("CITY")
+FROM "schools"
+WHERE "TYPE" = 'Public School'
+GROUP BY "CITY"
+ORDER BY COUNT("CITY") DESC , "CITY"
+LIMIT 10;
+
+
